@@ -30,7 +30,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
+//    func applicationDidEnterBackground(_ application: UIApplication) {
+//        //백그라운드에서도 Permission을 요청한다.
+//        let app = UIApplication.shared
+//
+//        let notificationSettings = UIUserNotificationSettings(types: [.alert, .sound], categories: nil)
+//
+//        app.registerUserNotificationSettings(notificationSettings)
+//
+//백그라운드에서 알람이 울리는 시간        let alertTime = NSDate().dateByAddingTimeInterval(3)
+//        let notifyAlarm = UILocalNotification()
+//
+//알람에 나타낼 시간        notifyAlarm.fireDate = alertTime
+//        notifyAlarm.timeZone = NSTimeZone.defaultTimeZone()
+//알람에 쓰일 음악        notifyAlarm.soundName = "bell_tree.mp3"
+//알람에 나올 메세지        notifyAlarm.alertBody = "알람이 울린다."
+//로컬 알림 예약        app.scheduleLocalNotification(notifyAlarm)
+//10이전버전에서 사용되던 알람.
+//
+//    }
+    
+    
 }
 
